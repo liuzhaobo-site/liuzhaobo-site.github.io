@@ -108,7 +108,7 @@ Gibler, Douglas M. and Steven V. Miller. 2012. "[Comparing the Foreign Aid Polic
 
 Miller, Steven V. and Douglas M. Gibler. 2011. "[Democracies, Territory and Negotiated Compromises](http://cmp.sagepub.com/content/28/3/261)." *Conflict Management and Peace Science* 28(3): 261-279.
 
-**Z. Liu**, and C. Li*. (2019). "[Is It Possible to Stabilize Discrete-time Parameterized Uncertain Systems Growing Exponentially Fast?](/files/siam19.pdf)." *SIAM Journal on Control and Optimization*. 57(3): 1965-1984.
+**Z. Liu**, and C. Li\*. (2019). "[Is It Possible to Stabilize Discrete-time Parameterized Uncertain Systems Growing Exponentially Fast?](/files/siam19.pdf)." *SIAM Journal on Control and Optimization*. 57(3): 1965-1984.
 
 
 
