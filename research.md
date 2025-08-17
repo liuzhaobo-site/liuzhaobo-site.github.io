@@ -108,7 +108,8 @@ Gibler, Douglas M. and Steven V. Miller. 2012. "[Comparing the Foreign Aid Polic
 
 Miller, Steven V. and Douglas M. Gibler. 2011. "[Democracies, Territory and Negotiated Compromises](http://cmp.sagepub.com/content/28/3/261)." *Conflict Management and Peace Science* 28(3): 261-279.
 
-## Book Chapters and Edited Volumes
+
+<!--## Book Chapters and Edited Volumes
 
 Miller, Steven V. 2022. "Territorial Disputes." *Encyclopedia of Violence, Peace & Conflict* (3rd ed.). Elsevier.
 
@@ -116,7 +117,9 @@ Gibler, Douglas M. and Steven V. Miller. 2021. "The Territorial Peace." [*What D
 
 Miller, Steven V., Jaroslav Tir, and John A. Vasquez. 2020. "[Geography, Territory, and Conflict](https://oxfordre.com/internationalstudies/view/10.1093/acrefore/9780190846626.001.0001/acrefore-9780190846626-e-320)." *Oxford Research Encyclopedia of International Studies.* `doi:` [10.1093/acrefore/9780190846626.013.320](https://oxfordre.com/internationalstudies/view/10.1093/acrefore/9780190846626.001.0001/acrefore-9780190846626-e-320)
 
-## Book Reviews
+
+
+<!--## Book Reviews
 
 Miller, Steven V. 2020. "[Power without Victory: Woodrow Wilson and the American Internationalist Experiment](https://www.tandfonline.com/doi/full/10.1080/07343469.2020.1761051)" *Congress & the Presidency*.
 
