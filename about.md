@@ -5,10 +5,25 @@ permalink: /about/
 active: about
 ---
 
-{% include image.html url="/images/svm-2025-04-23.jpg" caption="Steve." width=350 align="right" %}
+{% include image.html url="/images/zhaobo-liu-photo.jpg" caption="Zhaobo Liu" width=350 align="right" %}
 
-I do have interests outside of the academy, but not many.
+I am a [Your Position, e.g., Ph.D. Candidate, Postdoctoral Fellow] at the **Institute for Advanced Study, Shenzhen University**.
 
-I am a proud graduate of <a class="tosu" href="http://www.osu.edu/"><em><abbr title="Yes, the THE is important">The</abbr></em> Ohio State University</a>. I do not conceal that well, nor do I try. This is especially true during football season.
+My research interests lie at the intersection of [Your Broad Field 1, e.g., Machine Learning] and [Your Broad Field 2, e.g., Computational Biology]. I am particularly interested in [mention a more specific topic, e.g., graph neural networks]. My current work focuses on developing novel algorithms to [briefly state the goal of your work, e.g., predict protein interactions].
 
-I don’t have much time beyond obsessing about the Buckeyes to follow other sports. That said, I’m convinced the Cleveland Browns will be [the first team in the NFL to go 19-0](https://www.youtube.com/watch?v=CPLzmctAInQ) and, likewise, the [Cleveland Guardians](https://www.mlb.com/indians/fans/cleteamname) will be the first team in Major League Baseball history to finish the season 173-0. I believe these are reasonable, modest predictions for the Browns and Guardians that I make every season. Now, I’ve been wrong about these projections before---repeatedly, in all honesty. However, I’ve got a really good feeling about next year...
+### Research Interests
+
+*   [Specific Research Interest 1]
+*   [Specific Research Interest 2]
+*   [Specific Research Interest 3]
+*   [Specific Research Interest 4]
+
+### Education
+
+*   **Ph.D.** in [Your Major], Shenzhen University, *[Start Year] - Present*
+*   **M.S.** in [Your Major], [Name of University], *[Year of Completion]*
+*   **B.S.** in [Your Major], [Name of University], *[Year of Completion]*
+
+You can download my full Curriculum Vitae [here](/files/your-cv-filename.pdf).
+
+For any inquiries, please feel free to contact me via email: [your.email@example.com](mailto:your.email@example.com).
