@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>刘兆波 | 学术主页</title>
-  <meta name="description" content="刘兆波，深圳大学高等研究院研究员。研究方向包括控制论、计算智能与数据科学。">
+  <meta name="description" content="刘兆波，深圳大学高等研究院研究员。研究方向：控制论、计算智能、数据科学。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Source+Serif+4:wght@500;700&display=swap" rel="stylesheet">
@@ -12,52 +12,42 @@
     :root {
       --bg: #f4f7fb;
       --panel: #ffffff;
-      --ink: #192431;
-      --soft: #4f6275;
-      --primary: #0d4a73;
-      --line: #dbe3ec;
-      --accent: #d7eaf7;
+      --ink: #182535;
+      --soft: #4f6277;
+      --primary: #0f4b73;
+      --line: #dae4ee;
+      --tag-bg: #dbeefa;
+      --tag-border: #c7deef;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       color: var(--ink);
       font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
       background:
-        radial-gradient(circle at 12% 6%, #e6f1fb 0%, transparent 42%),
-        radial-gradient(circle at 86% 3%, #eff6ee 0%, transparent 38%),
+        radial-gradient(circle at 10% 8%, #e8f2fb 0%, transparent 40%),
+        radial-gradient(circle at 88% 4%, #ecf7ec 0%, transparent 34%),
         var(--bg);
-      line-height: 1.7;
+      line-height: 1.72;
     }
 
-    body.lang-zh .en {
-      display: none;
-    }
-
-    body.lang-en .zh {
-      display: none;
-    }
+    body.lang-zh .en { display: none; }
+    body.lang-en .zh { display: none; }
 
     .topbar {
       position: sticky;
       top: 0;
       z-index: 20;
-      backdrop-filter: blur(6px);
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.92);
       border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(6px);
     }
 
-    .topbar-inner,
-    .container {
-      max-width: 1040px;
+    .topbar-inner, .container {
+      max-width: 1100px;
       margin: 0 auto;
       padding: 0 18px;
     }
@@ -65,41 +55,39 @@
     .topbar-inner {
       min-height: 64px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       gap: 14px;
     }
 
     .brand {
-      font-family: "Source Serif 4", Georgia, serif;
-      font-size: 1.1rem;
-      font-weight: 700;
       color: var(--primary);
       text-decoration: none;
+      font-size: 1.08rem;
+      font-family: "Source Serif 4", Georgia, serif;
+      font-weight: 700;
       white-space: nowrap;
     }
 
     .nav {
       display: flex;
-      align-items: center;
-      gap: 12px;
       flex-wrap: wrap;
       justify-content: flex-end;
+      gap: 12px;
+      align-items: center;
     }
 
     .nav a {
       color: var(--soft);
       text-decoration: none;
-      font-size: 0.93rem;
+      font-size: 0.92rem;
     }
 
-    .nav a:hover {
-      color: var(--primary);
-    }
+    .nav a:hover { color: var(--primary); }
 
     .lang-btn {
       border: 1px solid var(--line);
-      background: var(--panel);
+      background: #fff;
       color: var(--primary);
       padding: 4px 10px;
       border-radius: 999px;
@@ -107,8 +95,9 @@
       cursor: pointer;
     }
 
+    main { padding: 24px 0 8px; }
+
     .hero {
-      margin: 26px 0 20px;
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 18px;
@@ -117,6 +106,7 @@
       grid-template-columns: 190px 1fr;
       gap: 24px;
       align-items: center;
+      margin-bottom: 16px;
     }
 
     .avatar {
@@ -127,27 +117,25 @@
 
     .hero h1 {
       margin: 0;
+      color: #143752;
       font-family: "Source Serif 4", Georgia, serif;
       font-size: 2.1rem;
-      line-height: 1.2;
-      color: #153349;
+      line-height: 1.22;
     }
 
     .subtitle {
       margin: 8px 0 0;
       color: var(--soft);
-      font-size: 1.02rem;
+      font-size: 1.01rem;
     }
 
-    .bio {
-      margin: 16px 0 0;
-    }
+    .bio { margin: 15px 0 0; }
 
     .quick-links {
-      margin-top: 15px;
+      margin-top: 16px;
       display: flex;
-      flex-wrap: wrap;
       gap: 10px;
+      flex-wrap: wrap;
     }
 
     .quick-links a {
@@ -156,8 +144,8 @@
       border: 1px solid var(--line);
       border-radius: 999px;
       padding: 4px 11px;
-      font-size: 0.87rem;
       background: #f8fbff;
+      font-size: 0.87rem;
     }
 
     section.card {
@@ -170,66 +158,65 @@
 
     section.card h2 {
       margin: 0 0 12px;
+      color: #173b57;
+      font-size: 1.43rem;
       font-family: "Source Serif 4", Georgia, serif;
-      font-size: 1.45rem;
-      color: #173954;
     }
 
-    .timeline,
-    .plain-list,
-    .pub-list {
+    .timeline, .plain-list {
       margin: 0;
       padding: 0;
       list-style: none;
     }
 
-    .timeline li,
-    .plain-list li,
-    .pub-list li {
+    .timeline li, .plain-list li {
       padding: 9px 0;
-      border-bottom: 1px dashed #e6edf3;
+      border-bottom: 1px dashed #e5edf5;
     }
 
-    .timeline li:last-child,
-    .plain-list li:last-child,
-    .pub-list li:last-child {
-      border-bottom: 0;
-    }
+    .timeline li:last-child, .plain-list li:last-child { border-bottom: 0; }
 
     .year {
       display: inline-block;
-      min-width: 172px;
-      color: #365671;
+      min-width: 176px;
+      color: #355978;
       font-weight: 500;
     }
 
     .tags {
       display: flex;
-      gap: 10px;
       flex-wrap: wrap;
+      gap: 10px;
       margin-top: 4px;
     }
 
     .tag {
-      background: var(--accent);
-      border: 1px solid #c9dfef;
-      color: #1e4f73;
+      background: var(--tag-bg);
+      border: 1px solid var(--tag-border);
+      color: #1f5378;
       border-radius: 999px;
-      padding: 4px 11px;
-      font-size: 0.86rem;
+      padding: 5px 12px;
+      font-size: 0.88rem;
+    }
+
+    .pub-list {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .pub-list li {
+      padding: 8px 0;
     }
 
     .pub-list a {
       color: var(--primary);
       text-decoration: none;
-      margin-left: 5px;
+      margin-left: 6px;
       white-space: nowrap;
       font-size: 0.92rem;
     }
 
-    .pub-list a:hover {
-      text-decoration: underline;
-    }
+    .pub-list a:hover { text-decoration: underline; }
 
     .note {
       margin-top: 10px;
@@ -238,20 +225,15 @@
     }
 
     footer {
-      padding: 18px 0 34px;
-      color: var(--soft);
-      font-size: 0.88rem;
       text-align: center;
+      color: var(--soft);
+      padding: 16px 0 34px;
+      font-size: 0.88rem;
     }
 
     @media (max-width: 860px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
-
-      .avatar {
-        max-width: 180px;
-      }
+      .hero { grid-template-columns: 1fr; }
+      .avatar { max-width: 180px; }
     }
 
     @media (max-width: 620px) {
@@ -260,14 +242,8 @@
         padding-bottom: 8px;
         align-items: flex-start;
       }
-
-      .nav {
-        gap: 8px;
-      }
-
-      .nav a {
-        font-size: 0.85rem;
-      }
+      .nav { gap: 8px; }
+      .nav a { font-size: 0.85rem; }
     }
   </style>
 </head>
@@ -299,10 +275,10 @@
         <p class="subtitle zh">深圳大学高等研究院 研究员</p>
         <p class="subtitle en">Research Fellow, Institute for Advanced Study, Shenzhen University</p>
         <p class="bio zh">
-          我目前任职于深圳大学高等研究院，长期从事控制论、计算智能与数据科学交叉方向研究，关注理论分析与算法设计在复杂系统中的协同应用。
+          我目前任职于深圳大学高等研究院，主要研究控制论、计算智能与数据科学，关注理论分析与算法设计在复杂系统中的协同应用。
         </p>
         <p class="bio en">
-          I am currently a Research Fellow at Shenzhen University. My research lies at the intersection of control theory, computational intelligence, and data science, with a focus on theory-driven algorithm design for complex systems.
+          I am currently a Research Fellow at Shenzhen University. My work focuses on cybernetics, computational intelligence, and data science, especially theory-driven algorithm design for complex systems.
         </p>
         <div class="quick-links">
           <a href="mailto:liuzhaobo@szu.edu.cn">Email</a>
@@ -343,14 +319,8 @@
       <h2><span class="zh">研究兴趣</span><span class="en">Research Interests</span></h2>
       <div class="tags">
         <span class="tag">控制论 / Cybernetics</span>
-        <span class="tag">自适应控制 / Adaptive Control</span>
-        <span class="tag">反馈能力极限 / Feedback Limits</span>
         <span class="tag">计算智能 / Computational Intelligence</span>
-        <span class="tag">演化计算 / Evolutionary Computation</span>
-        <span class="tag">多任务优化 / Multitask Optimization</span>
         <span class="tag">数据科学 / Data Science</span>
-        <span class="tag">分布式建模 / Distributed Modeling</span>
-        <span class="tag">模型平均 / Model Averaging</span>
       </div>
     </section>
 
@@ -381,54 +351,84 @@
     </section>
 
     <section id="publications" class="card">
-      <h2><span class="zh">论文与成果</span><span class="en">Publications</span></h2>
-      <ul class="pub-list">
-        <li>2026. Optimal Linear Crossover for Mitigating Negative Transfer in Evolutionary Multitasking.
-          <a href="/files/TEVC24.pdf" target="_blank" rel="noopener">[PDF]</a>
-          <a href="https://dblp.org/rec/journals/tec/LiuYZZZ26" target="_blank" rel="noopener">[DBLP]</a>
-        </li>
-        <li>2025. Optimal Adaptive Output Regulation of Discrete-Time Nonlinear Stochastic Systems.
-          <a href="/files/siamart_250211.pdf" target="_blank" rel="noopener">[PDF]</a>
-          <a href="https://dblp.org/rec/journals/siamco/LiuL25" target="_blank" rel="noopener">[DBLP]</a>
-        </li>
-        <li>2025. Enhancing Multivariate Time Series Forecasting: A Novel Approach with Mallows Model Averaging and Graph Neural Networks.
-          <a href="/files/Enhancing_Multivariate_Time_Series_Forecasting__A_Novel_Approach_with_Mallows_Model_Averaging_and_Graph_Neural_Networks__.pdf" target="_blank" rel="noopener">[PDF]</a>
-          <a href="https://dblp.org/rec/journals/jossac/ZhangWLD25" target="_blank" rel="noopener">[DBLP]</a>
-        </li>
-        <li>2024. Multifactorial Evolutionary Algorithm Based on Diffusion Gradient Descent.
-          <a href="/files/tycb2023.pdf" target="_blank" rel="noopener">[PDF]</a>
-          <a href="https://dblp.org/rec/journals/tcyb/LiuLZLZ24" target="_blank" rel="noopener">[DBLP]</a>
-        </li>
-        <li>2023. Least Squares Model Averaging for Distributed Data.
-          <a href="/files/JMLR23.pdf" target="_blank" rel="noopener">[PDF]</a>
-          <a href="https://dblp.org/rec/journals/jmlr/ZhangLZ23" target="_blank" rel="noopener">[DBLP]</a>
-        </li>
-        <li>2023. Global Stabilizability Theorems on Discrete-Time Nonlinear Uncertain Systems.
-          <a href="/files/tac23.pdf" target="_blank" rel="noopener">[PDF]</a>
-          <a href="https://dblp.org/rec/journals/tac/LiuL23" target="_blank" rel="noopener">[DBLP]</a>
-        </li>
-        <li>2023. Asymptotic behavior of least squares estimators for nonlinear autoregressive models.
-          <a href="/files/On_the_Convergence_of_Least_Squares_Estimator_for_Nonlinear_Autoregressive_Models.pdf" target="_blank" rel="noopener">[PDF]</a>
-          <a href="https://dblp.org/rec/journals/chinaf/LiuL23" target="_blank" rel="noopener">[DBLP]</a>
-        </li>
-        <li>2022. A Note on the Convergence of Distributed RLS.
-          <a href="/files/tac22.pdf" target="_blank" rel="noopener">[PDF]</a>
-          <a href="https://dblp.org/rec/journals/tac/LiuL22" target="_blank" rel="noopener">[DBLP]</a>
-        </li>
-        <li>2019. Is It Possible to Stabilize Discrete-Time Parameterized Uncertain Systems Growing Exponentially Fast?
+      <h2><span class="zh">论文（标准引用格式）</span><span class="en">Publications (Formal Citation Style)</span></h2>
+      <ol class="pub-list">
+        <li>
+          Liu, Z., &amp; Li, C. (2019). Is It Possible to Stabilize Discrete-Time Parameterized Uncertain Systems Growing Exponentially Fast? <em>SIAM Journal on Control and Optimization</em>, 57(3), 1965-1984.
           <a href="/files/siam19.pdf" target="_blank" rel="noopener">[PDF]</a>
           <a href="https://dblp.org/rec/journals/siamco/LiuL19" target="_blank" rel="noopener">[DBLP]</a>
         </li>
-      </ul>
+        <li>
+          Liu, Z., &amp; Li, C. (2021). On the Convergence of Least Squares Estimator for Nonlinear Autoregressive Models. In <em>Proceedings of the 40th Chinese Control Conference (CCC)</em>.
+          <a href="/files/CCC2021.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://doi.org/10.23919/CCC52363.2021.9550187" target="_blank" rel="noopener">[DOI]</a>
+        </li>
+        <li>
+          Liu, Z., Xie, Q., &amp; Li, C. (2022). Inverse eigenvalue problem for mass-inerter systems. <em>Mechanical Systems and Signal Processing</em>, 167, 108506.
+          <a href="/files/mssp22.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://doi.org/10.1016/j.ymssp.2021.108506" target="_blank" rel="noopener">[DOI]</a>
+        </li>
+        <li>
+          Liu, Z., &amp; Li, C. (2022). A Note on the Convergence of Distributed RLS. <em>IEEE Transactions on Automatic Control</em>, 67(12), 6762-6769.
+          <a href="/files/tac22.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://doi.org/10.1109/TAC.2022.3194882" target="_blank" rel="noopener">[DOI]</a>
+        </li>
+        <li>
+          Liu, Z., &amp; Li, C. (2023). Global Stabilizability Theorems on Discrete-Time Nonlinear Uncertain Systems. <em>IEEE Transactions on Automatic Control</em>, 68(6), 3226-3240.
+          <a href="/files/tac2023.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="/files/tac23.pdf" target="_blank" rel="noopener">[PDF-Early]</a>
+          <a href="https://doi.org/10.1109/TAC.2022.3194962" target="_blank" rel="noopener">[DOI]</a>
+        </li>
+        <li>
+          Zhang, H., Liu, Z., &amp; Zhu, Z. (2023). Least Squares Model Averaging for Distributed Data. <em>Journal of Machine Learning Research</em>, 24, 1-36.
+          <a href="/files/JMLR23.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://dblp.org/rec/journals/jmlr/ZhangLZ23" target="_blank" rel="noopener">[DBLP]</a>
+        </li>
+        <li>
+          Liu, Z., &amp; Li, C. (2023). Asymptotic behavior of least squares estimators for nonlinear autoregressive models. <em>Science China Information Sciences</em>, 66(7), 172201.
+          <a href="/files/sisc23.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://doi.org/10.1007/s11432-021-3309-7" target="_blank" rel="noopener">[DOI]</a>
+        </li>
+        <li>
+          Liu, Z., Chen, Q., &amp; Li, C. (2023). Further results on inverse eigenvalue problem for mass-inerter systems. <em>Mechanical Systems and Signal Processing</em>, 204, 110719.
+          <a href="/files/mssp23.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://doi.org/10.1016/j.ymssp.2023.110719" target="_blank" rel="noopener">[DOI]</a>
+        </li>
+        <li>
+          Liu, Z., Li, G., Zhang, H., Liang, Z., &amp; Zhu, Z. (2024). Multifactorial Evolutionary Algorithm Based on Diffusion Gradient Descent. <em>IEEE Transactions on Cybernetics</em>, 55(5), 2582-2594.
+          <a href="/files/tycb23.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="/files/tycb2023.pdf" target="_blank" rel="noopener">[PDF-Early]</a>
+          <a href="https://doi.org/10.1109/TCYB.2023.3270904" target="_blank" rel="noopener">[DOI]</a>
+        </li>
+        <li>
+          Liu, Z., &amp; Li, C. (2025). Optimal Adaptive Output Regulation of Discrete-Time Nonlinear Stochastic Systems. <em>SIAM Journal on Control and Optimization</em>, 63(1), 149-174.
+          <a href="/files/siamart_250211.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://dblp.org/rec/journals/siamco/LiuL25" target="_blank" rel="noopener">[DBLP]</a>
+        </li>
+        <li>
+          Zhang, H., Wang, C., Liu, Z., &amp; Du, H. (2025). Enhancing Multivariate Time Series Forecasting: A Novel Approach with Mallows Model Averaging and Graph Neural Networks. <em>Journal of Systems Science and Complexity</em>, 38(6), 3006-3027.
+          <a href="/files/Enhancing_Multivariate_Time_Series_Forecasting__A_Novel_Approach_with_Mallows_Model_Averaging_and_Graph_Neural_Networks__.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://dblp.org/rec/journals/jossac/ZhangWLD25" target="_blank" rel="noopener">[DBLP]</a>
+        </li>
+        <li>
+          Liu, Z., Yu, K., Zhu, Z., Zhang, H., &amp; Li, G. (2026). Optimal Linear Crossover for Mitigating Negative Transfer in Evolutionary Multitasking. <em>IEEE Transactions on Evolutionary Computation</em>, 30(2), 209-222.
+          <a href="/files/TEVC24.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://doi.org/10.1109/TEVC.2024.3490174" target="_blank" rel="noopener">[DOI]</a>
+        </li>
+        <li>
+          刘兆波，李婵颖. (2022). 单参数离散时间非线性系统的可镇定性定理. <em>自动化学报</em>, 48(4), 860-869.
+          <a href="/files/单参数离散时间非线性系统的可镇定性定理.pdf" target="_blank" rel="noopener">[PDF]</a>
+        </li>
+      </ol>
       <p class="note zh">
-        完整论文列表与动态更新请见：
+        完整与最新论文列表请访问
         <a href="https://www.researchgate.net/profile/Zhaobo-Liu" target="_blank" rel="noopener">ResearchGate</a>。
-        本页中的 <strong>[PDF]</strong> 链接可直接在线查看并下载。
+        页面中所有 <strong>[PDF]</strong> 链接均可直接在线查看和下载。
       </p>
       <p class="note en">
-        For the complete and frequently updated publication list, please visit
+        For the complete and latest publication list, please visit
         <a href="https://www.researchgate.net/profile/Zhaobo-Liu" target="_blank" rel="noopener">ResearchGate</a>.
-        The <strong>[PDF]</strong> links above support direct online viewing and download.
+        All <strong>[PDF]</strong> links above support direct viewing and downloading.
       </p>
     </section>
 
