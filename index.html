@@ -1,17 +1,479 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>刘兆波 | 学术主页</title>
+  <meta name="description" content="刘兆波，深圳大学高等研究院研究员。研究方向包括控制论、计算智能与数据科学。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Source+Serif+4:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --panel: #ffffff;
+      --ink: #192431;
+      --soft: #4f6275;
+      --primary: #0d4a73;
+      --line: #dbe3ec;
+      --accent: #d7eaf7;
+    }
 
+    * {
+      box-sizing: border-box;
+    }
 
+    html {
+      scroll-behavior: smooth;
+    }
 
-<div class="home">
-	
-<h1>Welcome/Välkommen</h1>
-	
-	<p>This is my academic website, where you can find information on my current research and the classes that I teach. I am a docent in international relations with the <a href="https://ekohist.su.se/english/">Department of Economic History and Internal Relations</a> at <a href="http://su.se">Stockholm University</a> and a <a href="https://www.bitss.org/people/steven-miller/">BITSS Catalyst</a> with the <a href="https://www.bitss.org">Berkeley Initiative for Transparency in the Social Sciences</a>. I was previously an associate professor in the <a href="https://www.clemson.edu/cbshs/departments/political-science/index.html">Department of Political Science</a> at <a href="https://www.clemson.edu/">Clemson University</a>.</p>
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at 12% 6%, #e6f1fb 0%, transparent 42%),
+        radial-gradient(circle at 86% 3%, #eff6ee 0%, transparent 38%),
+        var(--bg);
+      line-height: 1.7;
+    }
 
-	<p>I use statistics and machine learning to understand why people adopt authoritarian political beliefs or embrace autocratic leaders in response to real or perceived threats. This puts my research and teaching interests at the broad intersection of international conflict and political behavior. My research outputs have appeared in peer-reviewed journals like <em>Comparative Political Studies</em>, <em>International Studies Quarterly</em>, <em>Journal of Conflict Resolution</em>, <em>Journal of Peace Research</em>, <em>Political Behavior</em>, and <em>Political Research Quarterly</em>, to name a few. More recent research is funded by the National Science Foundation and has even been highlighted in newspapers like <em>The New York Times</em> and <em>The Washington Post</em>.</p>
+    body.lang-zh .en {
+      display: none;
+    }
 
-{% include image.html url="/images/buckeyeprotesteriran.jpg" caption="A supporter of defeated Iranian presidential candidate Mir Hossein Mousavi gestures during a rally in Tehran on June 15, 2009 (AFP/Getty Images)." width=580 align="center" %}
+    body.lang-en .zh {
+      display: none;
+    }
 
-</div>
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(6px);
+      background: rgba(255, 255, 255, 0.9);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar-inner,
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 18px;
+    }
+
+    .topbar-inner {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .brand {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      color: var(--soft);
+      text-decoration: none;
+      font-size: 0.93rem;
+    }
+
+    .nav a:hover {
+      color: var(--primary);
+    }
+
+    .lang-btn {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--primary);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      margin: 26px 0 20px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .avatar {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 2.1rem;
+      line-height: 1.2;
+      color: #153349;
+    }
+
+    .subtitle {
+      margin: 8px 0 0;
+      color: var(--soft);
+      font-size: 1.02rem;
+    }
+
+    .bio {
+      margin: 16px 0 0;
+    }
+
+    .quick-links {
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .quick-links a {
+      text-decoration: none;
+      color: var(--primary);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 11px;
+      font-size: 0.87rem;
+      background: #f8fbff;
+    }
+
+    section.card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 14px;
+    }
+
+    section.card h2 {
+      margin: 0 0 12px;
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 1.45rem;
+      color: #173954;
+    }
+
+    .timeline,
+    .plain-list,
+    .pub-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .timeline li,
+    .plain-list li,
+    .pub-list li {
+      padding: 9px 0;
+      border-bottom: 1px dashed #e6edf3;
+    }
+
+    .timeline li:last-child,
+    .plain-list li:last-child,
+    .pub-list li:last-child {
+      border-bottom: 0;
+    }
+
+    .year {
+      display: inline-block;
+      min-width: 172px;
+      color: #365671;
+      font-weight: 500;
+    }
+
+    .tags {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+
+    .tag {
+      background: var(--accent);
+      border: 1px solid #c9dfef;
+      color: #1e4f73;
+      border-radius: 999px;
+      padding: 4px 11px;
+      font-size: 0.86rem;
+    }
+
+    .pub-list a {
+      color: var(--primary);
+      text-decoration: none;
+      margin-left: 5px;
+      white-space: nowrap;
+      font-size: 0.92rem;
+    }
+
+    .pub-list a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      margin-top: 10px;
+      color: var(--soft);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      padding: 18px 0 34px;
+      color: var(--soft);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .avatar {
+        max-width: 180px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .topbar-inner {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        align-items: flex-start;
+      }
+
+      .nav {
+        gap: 8px;
+      }
+
+      .nav a {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body class="lang-zh">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top">Zhaobo Liu</a>
+      <nav class="nav">
+        <a href="#about"><span class="zh">简介</span><span class="en">About</span></a>
+        <a href="#education"><span class="zh">教育</span><span class="en">Education</span></a>
+        <a href="#experience"><span class="zh">经历</span><span class="en">Experience</span></a>
+        <a href="#research"><span class="zh">研究</span><span class="en">Research</span></a>
+        <a href="#projects"><span class="zh">项目</span><span class="en">Projects</span></a>
+        <a href="#publications"><span class="zh">论文</span><span class="en">Publications</span></a>
+        <a href="#awards"><span class="zh">获奖</span><span class="en">Awards</span></a>
+        <button id="langToggle" class="lang-btn" type="button">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section id="about" class="hero">
+      <img class="avatar" src="/images/zhaobo-liu-photo.jpg" alt="刘兆波">
+      <div>
+        <h1>
+          <span class="zh">刘兆波</span>
+          <span class="en">Zhaobo Liu</span>
+        </h1>
+        <p class="subtitle zh">深圳大学高等研究院 研究员</p>
+        <p class="subtitle en">Research Fellow, Institute for Advanced Study, Shenzhen University</p>
+        <p class="bio zh">
+          我目前任职于深圳大学高等研究院，长期从事控制论、计算智能与数据科学交叉方向研究，关注理论分析与算法设计在复杂系统中的协同应用。
+        </p>
+        <p class="bio en">
+          I am currently a Research Fellow at Shenzhen University. My research lies at the intersection of control theory, computational intelligence, and data science, with a focus on theory-driven algorithm design for complex systems.
+        </p>
+        <div class="quick-links">
+          <a href="mailto:liuzhaobo@szu.edu.cn">Email</a>
+          <a href="https://www.researchgate.net/profile/Zhaobo-Liu" target="_blank" rel="noopener">ResearchGate</a>
+          <a href="https://orcid.org/0000-0003-3140-668X" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://github.com/liuzhaobo-site" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h2><span class="zh">教育背景</span><span class="en">Education</span></h2>
+      <ul class="timeline zh">
+        <li><span class="year">2015.09 - 2020.07</span>中国科学院数学与系统科学研究院，博士，运筹学与控制论（导师：郭雷研究员，李婵颖研究员）</li>
+        <li><span class="year">2011.09 - 2015.07</span>北京大学，学士，数学与应用数学</li>
+      </ul>
+      <ul class="timeline en">
+        <li><span class="year">Sep 2015 - Jul 2020</span>Ph.D. in Operations Research and Cybernetics, Academy of Mathematics and Systems Science, Chinese Academy of Sciences (Advisors: Prof. Lei Guo, Prof. Chanying Li)</li>
+        <li><span class="year">Sep 2011 - Jul 2015</span>B.S. in Mathematics and Applied Mathematics, Peking University</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="card">
+      <h2><span class="zh">工作经历</span><span class="en">Professional Experience</span></h2>
+      <ul class="timeline zh">
+        <li><span class="year">2022.09 - 至今</span>深圳大学高等研究院，研究员</li>
+        <li><span class="year">2023.06 - 2023.11</span>香港中文大学机械与自动化工程学系，荣誉访问学者（合作导师：黄捷教授）</li>
+        <li><span class="year">2020.09 - 2022.08</span>深圳大学计算机与软件学院，博士后（合作导师：朱泽轩教授）</li>
+      </ul>
+      <ul class="timeline en">
+        <li><span class="year">Sep 2022 - Present</span>Research Fellow, Institute for Advanced Study, Shenzhen University</li>
+        <li><span class="year">Jun 2023 - Nov 2023</span>Honorary Visiting Scholar, Department of Mechanical and Automation Engineering, The Chinese University of Hong Kong (Host: Prof. Jie Huang)</li>
+        <li><span class="year">Sep 2020 - Aug 2022</span>Postdoctoral Fellow, College of Computer Science and Software Engineering, Shenzhen University (Host: Prof. Zexuan Zhu)</li>
+      </ul>
+    </section>
+
+    <section id="research" class="card">
+      <h2><span class="zh">研究兴趣</span><span class="en">Research Interests</span></h2>
+      <div class="tags">
+        <span class="tag">控制论 / Cybernetics</span>
+        <span class="tag">自适应控制 / Adaptive Control</span>
+        <span class="tag">反馈能力极限 / Feedback Limits</span>
+        <span class="tag">计算智能 / Computational Intelligence</span>
+        <span class="tag">演化计算 / Evolutionary Computation</span>
+        <span class="tag">多任务优化 / Multitask Optimization</span>
+        <span class="tag">数据科学 / Data Science</span>
+        <span class="tag">分布式建模 / Distributed Modeling</span>
+        <span class="tag">模型平均 / Model Averaging</span>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2><span class="zh">科研项目（共 9 项，主持 7 项）</span><span class="en">Research Projects (9 total, 7 as PI)</span></h2>
+      <ul class="plain-list zh">
+        <li>国家自然科学基金委，青年项目，在研，2025-2027，主持</li>
+        <li>广东省自然科学基金委员会，面上项目，在研，2024-2026，主持</li>
+        <li>广东省教育厅，广东省普通高校青年创新人才类项目，在研，2023-2025，主持</li>
+        <li>深圳市科技创新局，面上项目，在研，2026-2028，主持</li>
+        <li>深圳市教育局，鹏城孔雀计划高端人才科研启动项目，在研，2024-2026，主持</li>
+        <li>中俄数学中心，中俄数学挑战基金，在研，2025-2026，主持</li>
+        <li>深圳大学，青年教师科研启动基金，结题，2023-2025，主持</li>
+        <li>科技部，国家重点研发计划，在研，2022-2025，参与</li>
+        <li>国家自然科学基金委，面上项目，在研，2026-2028，参与</li>
+      </ul>
+      <ul class="plain-list en">
+        <li>NSFC Young Scientists Fund, ongoing (2025-2027), PI</li>
+        <li>Guangdong Natural Science Foundation (General Program), ongoing (2024-2026), PI</li>
+        <li>Guangdong Higher Education Young Innovative Talent Program, ongoing (2023-2025), PI</li>
+        <li>Shenzhen Science and Technology Innovation Commission (General Program), ongoing (2026-2028), PI</li>
+        <li>Shenzhen Education Bureau, Pengcheng Peacock High-Level Talent Start-up Project, ongoing (2024-2026), PI</li>
+        <li>China-Russia Mathematics Center, China-Russia Mathematics Challenge Fund, ongoing (2025-2026), PI</li>
+        <li>Shenzhen University Young Faculty Start-up Fund, completed (2023-2025), PI</li>
+        <li>National Key R&amp;D Program (MOST), ongoing (2022-2025), Participant</li>
+        <li>NSFC General Program, ongoing (2026-2028), Participant</li>
+      </ul>
+    </section>
+
+    <section id="publications" class="card">
+      <h2><span class="zh">论文与成果</span><span class="en">Publications</span></h2>
+      <ul class="pub-list">
+        <li>2026. Optimal Linear Crossover for Mitigating Negative Transfer in Evolutionary Multitasking.
+          <a href="/files/TEVC24.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://dblp.org/rec/journals/tec/LiuYZZZ26" target="_blank" rel="noopener">[DBLP]</a>
+        </li>
+        <li>2025. Optimal Adaptive Output Regulation of Discrete-Time Nonlinear Stochastic Systems.
+          <a href="/files/siamart_250211.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://dblp.org/rec/journals/siamco/LiuL25" target="_blank" rel="noopener">[DBLP]</a>
+        </li>
+        <li>2025. Enhancing Multivariate Time Series Forecasting: A Novel Approach with Mallows Model Averaging and Graph Neural Networks.
+          <a href="/files/Enhancing_Multivariate_Time_Series_Forecasting__A_Novel_Approach_with_Mallows_Model_Averaging_and_Graph_Neural_Networks__.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://dblp.org/rec/journals/jossac/ZhangWLD25" target="_blank" rel="noopener">[DBLP]</a>
+        </li>
+        <li>2024. Multifactorial Evolutionary Algorithm Based on Diffusion Gradient Descent.
+          <a href="/files/tycb2023.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://dblp.org/rec/journals/tcyb/LiuLZLZ24" target="_blank" rel="noopener">[DBLP]</a>
+        </li>
+        <li>2023. Least Squares Model Averaging for Distributed Data.
+          <a href="/files/JMLR23.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://dblp.org/rec/journals/jmlr/ZhangLZ23" target="_blank" rel="noopener">[DBLP]</a>
+        </li>
+        <li>2023. Global Stabilizability Theorems on Discrete-Time Nonlinear Uncertain Systems.
+          <a href="/files/tac23.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://dblp.org/rec/journals/tac/LiuL23" target="_blank" rel="noopener">[DBLP]</a>
+        </li>
+        <li>2023. Asymptotic behavior of least squares estimators for nonlinear autoregressive models.
+          <a href="/files/On_the_Convergence_of_Least_Squares_Estimator_for_Nonlinear_Autoregressive_Models.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://dblp.org/rec/journals/chinaf/LiuL23" target="_blank" rel="noopener">[DBLP]</a>
+        </li>
+        <li>2022. A Note on the Convergence of Distributed RLS.
+          <a href="/files/tac22.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://dblp.org/rec/journals/tac/LiuL22" target="_blank" rel="noopener">[DBLP]</a>
+        </li>
+        <li>2019. Is It Possible to Stabilize Discrete-Time Parameterized Uncertain Systems Growing Exponentially Fast?
+          <a href="/files/siam19.pdf" target="_blank" rel="noopener">[PDF]</a>
+          <a href="https://dblp.org/rec/journals/siamco/LiuL19" target="_blank" rel="noopener">[DBLP]</a>
+        </li>
+      </ul>
+      <p class="note zh">
+        完整论文列表与动态更新请见：
+        <a href="https://www.researchgate.net/profile/Zhaobo-Liu" target="_blank" rel="noopener">ResearchGate</a>。
+        本页中的 <strong>[PDF]</strong> 链接可直接在线查看并下载。
+      </p>
+      <p class="note en">
+        For the complete and frequently updated publication list, please visit
+        <a href="https://www.researchgate.net/profile/Zhaobo-Liu" target="_blank" rel="noopener">ResearchGate</a>.
+        The <strong>[PDF]</strong> links above support direct online viewing and download.
+      </p>
+    </section>
+
+    <section id="awards" class="card">
+      <h2><span class="zh">获奖情况</span><span class="en">Honors &amp; Awards</span></h2>
+      <ul class="plain-list zh">
+        <li>2025 年，广东省卓越人工智能与机器人奖科技进步一等奖</li>
+        <li>2025 年，深圳大学 2024 年十大科技进展</li>
+        <li>2021 年，IEEE CSS 北京分会青年作者提名奖（3/1662）</li>
+        <li>2020 年，中国科学院大学优秀毕业生</li>
+        <li>2020 年，北京市优秀毕业生</li>
+      </ul>
+      <ul class="plain-list en">
+        <li>2025, First Prize of Guangdong AI and Robotics Science &amp; Technology Progress Award</li>
+        <li>2025, Top 10 Scientific and Technological Advances of Shenzhen University (for 2024)</li>
+        <li>2021, IEEE CSS Beijing Chapter Young Author Nomination Award (3/1662)</li>
+        <li>2020, Outstanding Graduate, University of Chinese Academy of Sciences</li>
+        <li>2020, Outstanding Graduate, Beijing Municipality</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="zh">© <span id="yearZh"></span> 刘兆波 · 深圳大学高等研究院</div>
+    <div class="en">© <span id="yearEn"></span> Zhaobo Liu · Institute for Advanced Study, Shenzhen University</div>
+  </footer>
+
+  <script>
+    (function () {
+      var body = document.body;
+      var btn = document.getElementById("langToggle");
+      var yearZh = document.getElementById("yearZh");
+      var yearEn = document.getElementById("yearEn");
+      var year = new Date().getFullYear();
+
+      yearZh.textContent = year;
+      yearEn.textContent = year;
+
+      btn.addEventListener("click", function () {
+        var isZh = body.classList.contains("lang-zh");
+        body.classList.toggle("lang-zh", !isZh);
+        body.classList.toggle("lang-en", isZh);
+        btn.textContent = isZh ? "中文" : "EN";
+      });
+    })();
+  </script>
+</body>
+</html>
