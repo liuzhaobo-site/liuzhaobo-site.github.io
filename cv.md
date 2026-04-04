@@ -52,17 +52,10 @@ Postdoctoral Fellow, 2020.09-2022.08
 ## Selected Publications (Last 5 Years)
 
 1. Z. Liu, C. Li*. Optimal Adaptive Output Regulation of Discrete-Time Nonlinear Stochastic Systems. *SIAM Journal on Control and Optimization*, 63(4): 2369-2396, 2025.
-2. Zhang, H., Wang, J., Liu, Z.*, & Dong, H. Enhancing Multivariate Time Series Forecasting: A Novel Approach with Mallows Model Averaging and Graph Neural Networks. *Journal of Systems Science and Complexity*, 38(4): 1707-1729, 2025.
-3. Li, G., Liu, Z., Liu, L., & Zhu, Z.* Multifactorial memetic algorithm with adaptive auxiliary tasks for service migration optimization in mobile edge computing. *Memetic Computing*, 17(2): 11, 2025.
-4. Dong, H., Sun, L., Xiao, M., Liu, Z., & Song, Y.* Polynomial Stabilization of Highly Nonlinear Stochastic Systems with Pantograph Delay and Markovian Switching. *Journal of Systems Science and Complexity*, 1-22, 2025.
-5. Liu, Z., Yuan, J., Zhang, H., Zeng, T., & Zhu, Z.* Optimal Linear Crossover for Mitigating Negative Transfer in Evolutionary Multitasking. *IEEE Transactions on Evolutionary Computation*, 30(1): 46-60, 2024.
-6. Z. Liu, G. Li, H. Zhang, Z. Liang, Z. Zhu*. Multifactorial Evolutionary Algorithm Based on Diffusion Gradient Descent. *IEEE Transactions on Cybernetics*, 54(7): 4267-4279, 2024.
-7. Z. Liu, Q. Xie, C. Li*. Further Results on Inverse Eigenvalue Problem for Mass-Spring-Inerter Systems. *Mechanical Systems and Signal Processing*, 204: 110719, 2023.
-8. H. Zhang#, Z. Liu#, G. Zou*. Least Squares Model Averaging for Distributed Data. *Journal of Machine Learning Research*, 24: 1-59, 2023.
-9. Z. Liu, C. Li*. Global Stabilizability Theorems on Discrete-Time Nonlinear Uncertain Systems. *IEEE Transactions on Automatic Control*, 68(6): 3226-3240, 2023.
-10. Z. Liu, C. Li*. A Note on the Convergence of Distributed RLS. *IEEE Transactions on Automatic Control*, 67(12): 6762-6769, 2022.
-11. Z. Liu, Q. Xie, C. Li*. Inverse Eigenvalue Problem for Mass-Spring-Inerter Systems. *Mechanical Systems and Signal Processing*, 167: 108506, 2022.
-12. Z. Liu, C. Li*. On the Convergence of Least Squares Estimator for Nonlinear Autoregressive Models. *Proceedings of the 40th Chinese Control Conference*, IEEE, 1389-1934, 2021.
+2. Liu, Z., Yuan, J., Zhang, H., Zeng, T., & Zhu, Z.* Optimal Linear Crossover for Mitigating Negative Transfer in Evolutionary Multitasking. *IEEE Transactions on Evolutionary Computation*, 30(1): 46-60, 2024.
+3. Z. Liu, G. Li, H. Zhang, Z. Liang, Z. Zhu*. Multifactorial Evolutionary Algorithm Based on Diffusion Gradient Descent. *IEEE Transactions on Cybernetics*, 54(7): 4267-4279, 2024.
+4. H. Zhang#, Z. Liu#, G. Zou*. Least Squares Model Averaging for Distributed Data. *Journal of Machine Learning Research*, 24: 1-59, 2023.
+5. Z. Liu, C. Li*. Global Stabilizability Theorems on Discrete-Time Nonlinear Uncertain Systems. *IEEE Transactions on Automatic Control*, 68(6): 3226-3240, 2023.
 
 `#` Co-first author. `*` Corresponding author.
 
