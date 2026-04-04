@@ -52,7 +52,7 @@ Postdoctoral Fellow, 2020.09-2022.08
 ## Selected Publications (Last 5 Years)
 
 1. Z. Liu, C. Li*. Optimal Adaptive Output Regulation of Discrete-Time Nonlinear Stochastic Systems. *SIAM Journal on Control and Optimization*, 63(4): 2369-2396, 2025.
-2. Liu, Z., Yuan, J., Zhang, H., Zeng, T., & Zhu, Z.* Optimal Linear Crossover for Mitigating Negative Transfer in Evolutionary Multitasking. *IEEE Transactions on Evolutionary Computation*, 30(1): 46-60, 2024.
+2. Z. Liu, J. Yuan, H. Zhang, T. Zeng, Z. Zhu*. Optimal Linear Crossover for Mitigating Negative Transfer in Evolutionary Multitasking. *IEEE Transactions on Evolutionary Computation*, 30(1): 46-60, 2026.
 3. Z. Liu, G. Li, H. Zhang, Z. Liang, Z. Zhu*. Multifactorial Evolutionary Algorithm Based on Diffusion Gradient Descent. *IEEE Transactions on Cybernetics*, 54(7): 4267-4279, 2024.
 4. Z. Liu, C. Li*. Global Stabilizability Theorems on Discrete-Time Nonlinear Uncertain Systems. *IEEE Transactions on Automatic Control*, 68(6): 3226-3240, 2023.
 5. Z. Liu, Q. Xie, C. Li*. Further Results on Inverse Eigenvalue Problem for Mass-Spring-Inerter Systems. *Mechanical Systems and Signal Processing*, 204: 110719, 2023.
