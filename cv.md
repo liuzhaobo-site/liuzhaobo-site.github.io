@@ -70,10 +70,10 @@ Postdoctoral Fellow, 2020.09-2022.08
 2. **Data-driven closed-loop control and sparse identification for stochastic nonlinear systems**. Guangdong Natural Science Foundation General Program, No. 2024A1515011542, 2024.01-2026.12, CNY 150,000, ongoing, PI.
 3. **Closed-loop optimality of nonlinear parameterized stochastic systems**. Guangdong Young Innovative Talent Program, No. 2023KQNCX064, 2023.10-2025.09, CNY 50,000, funding period ended, PI.
 4. **Cyclic stability-excitation mechanism for adaptive tracking of nonlinear multivariate AR models**. Shenzhen Basic Research General Program, No. JCYJ20250604181037012, 2026.10-2028.09, CNY 300,000, ongoing, PI.
-5. **Big-data-based stochastic adaptive control**. Shenzhen High-level Talent Fund (Pengcheng Peacock Start-up Project), 2024-2026, ongoing, PI.
+5. **Big-data-based stochastic adaptive control**. Shenzhen High-level Talent Fund (Pengcheng Peacock Start-up Project), 2024-2026, CNY 1,971,700, ongoing, PI.
 6. **Efficient nonstationary channel tracking via prediction-smoothing and constrained optimization**. China-Russia Mathematics Challenge Fund, No. 2025SRMC12, 2025.11-2026.10, CNY 500,000, ongoing, PI.
-7. **Output regulation of discrete-time stochastic nonlinear systems based on transfer learning**. Shenzhen University Young Faculty Start-up Fund, 2023-2025, completed, PI.
-8. **Intelligent early-warning model for phase-transition detection of aquatic microecology and dynamic attribution of diseases**. Shenzhen University 2026 AI for Science Cultivation Project, 2026.03-2026.12, ongoing, PI.
+7. **Output regulation of discrete-time stochastic nonlinear systems based on transfer learning**. Shenzhen University Young Faculty Start-up Fund, 2023-2025, CNY 200,000, completed, PI.
+8. **Intelligent early-warning model for phase-transition detection of aquatic microecology and dynamic attribution of diseases**. Shenzhen University 2026 AI for Science Cultivation Project, 2026.03-2026.12, CNY 50,000, ongoing, PI.
 9. **Real-time codec key technologies for DNA storage**. National Key R&D Program (MOST), No. 2022YF1212104, 2022.11-2025.10, ongoing, Participant.
 10. **4D dynamic trajectory planning for UAV swarms integrating evolutionary multitasking and deep generative models**. NSFC General Program, No. 62572327, 2026.01-2029.12, ongoing, Participant.
 
