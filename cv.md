@@ -79,6 +79,7 @@ Postdoctoral Fellow, 2020.09-2022.08
 
 ## Awards and Honors
 
+- Huawei Spark Award, 2026
 - Guangdong AI and Robotics Science and Technology Progress Award, First Prize, 2025
 - Top 10 Scientific and Technological Advances of Shenzhen University (for 2024), 2025
 - IEEE CSS Beijing Chapter Young Author Nomination Prize (3/1662), 2021
