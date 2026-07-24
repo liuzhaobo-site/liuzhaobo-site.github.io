@@ -74,7 +74,7 @@ Postdoctoral Fellow, 2020.09-2022.08
 6. **Efficient nonstationary channel tracking via prediction-smoothing and constrained optimization**. China-Russia Mathematics Challenge Fund, No. 2025SRMC12, 2025.11-2026.10, CNY 500,000, ongoing, PI.
 7. **Output regulation of discrete-time stochastic nonlinear systems based on transfer learning**. Shenzhen University Young Faculty Start-up Fund, 2023-2025, CNY 200,000, completed, PI.
 8. **Intelligent early-warning model for phase-transition detection of aquatic microecology and dynamic attribution of diseases**. Shenzhen University 2026 AI for Science Cultivation Project, 2026.03-2026.12, CNY 50,000, ongoing, PI.
-9. **Guangdong Association for Science and Technology Young Scientific and Technological Talent Cultivation Program**. 2026-2027, CNY 30,000, Selected.
+9. **Guangdong Association for Science and Technology Young Scientific and Technological Talent Cultivation Program**. 2026-2027, CNY 30,000, PI.
 10. **Real-time codec key technologies for DNA storage**. National Key R&D Program (MOST), No. 2022YF1212104, 2022.11-2025.10, CNY 2,850,000, ongoing, Participant.
 11. **4D dynamic trajectory planning for UAV swarms integrating evolutionary multitasking and deep generative models**. NSFC General Program, No. 62572327, 2026.01-2029.12, CNY 490,000, ongoing, Participant.
 
