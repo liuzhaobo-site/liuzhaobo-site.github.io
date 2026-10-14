@@ -1,10 +1,15 @@
-svmiller.com
-============
+# Zhaobo Liu (刘兆波)
 
-This is my personal/academic website as hosted on Github at [svmiller.com](http://svmiller.com) and powered by Jekyll.
+This repository contains the academic website of Zhaobo Liu, Research Fellow at the Institute for Advanced Study, Shenzhen University.
 
-I discuss the reasons for the move [here](http://svmiller.com/blog/2015/08/create-your-website-in-jekyll/).
+Website: [liuzhaobo-site.github.io](https://liuzhaobo-site.github.io/)
 
-This repository will also serve as my most up-to-date Jekyll theme as well. I keep a minimal version of [my no-good-very-bad template](https://github.com/svmiller/steve-ngvb-jekyll-template) on a Github repository. It's basically a Frankenstein monster of [Joel Glovier](http://joelglovier.com/)'s `jekyll-new` theme and [Alex King](http://www.alexking.org)'s [Favepersonal](https://crowdfavorite.com/favepersonal/) Wordpress theme.
+His research interests are cybernetics, computational intelligence, and data science.
 
-I'm not sure this will help with search engine optimization, but, here goes: Steven V. Miller is a universitetlektor (associate professor) and political scientist in the Department of Economic History and International Relations at Stockholm University with research interests in international conflict and political behavior. His research has been published in journals like *Comparative Political Studies*, *Journal of Conflict Resolution*, *Journal of Peace Research*, *Conflict Management and Peace Science*, and *Social Science Quarterly*. Contents on this website typically involve professional development for students, R, LaTeX, and, occasionally, political science topics.
+## Pages
+
+- [Homepage](index.html): education, professional experience, research interests, publications, research projects, and awards.
+- [About](about.md): a short biography and education.
+- [CV](cv.md): academic curriculum vitae.
+
+The site is hosted on GitHub Pages and uses Jekyll for its Markdown pages.
