@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Shenzhen University. His research interests are cybernetics,
   computational intelligence, and data science.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://liuzhaobo-site.github.io/" # the base hostname & protocol for your site
+url: "https://liuzhaobo-site.github.io" # the base hostname & protocol for your site
 github_username:  liuzhaobo-site
 orcid_id: 0000-0003-3140-668X
 
@@ -23,7 +23,32 @@ excerpt_separator: "<!--more-->"
 
 
 
-plugins_dir:
+plugins:
   - jekyll-sitemap
 
-exclude: ['*.Rmd']
+# Keep content inherited from the original template out of the published site.
+exclude:
+  - "*.Rmd"
+  - "_posts"
+  - "blog.md"
+  - "categories"
+  - "article-summaries.md"
+  - "cyprus.md"
+  - "cyprus"
+  - "gml-mid-data.md"
+  - "graphs.md"
+  - "graphs"
+  - "miscelanea.md"
+  - "miscelanea"
+  - "presentations.md"
+  - "presentations"
+  - "for-students"
+  - "research"
+  - "teaching"
+  - "svm-article-summaries"
+  - "docs"
+  - "R"
+  - "extdata"
+  - "attendance-grades.png"
+  - "cow-state-sheet.pdf"
+  - "rmarkdown-example.pdf"
